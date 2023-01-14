@@ -109,8 +109,6 @@ select:focus {
   margin-left: 1rem;
 }
 
-
-
 /* Core Header styles */
 .showcase {
   width: 100%;
@@ -146,7 +144,6 @@ select:focus {
     min-width: 100px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
-
 }
 
 .container .element:hover{
@@ -185,7 +182,7 @@ select:focus {
    border: 1px solid #999;
    display: inline-block;
   margin: 2rem 0;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
    color: #999;
    cursor: pointer;
 }
@@ -203,7 +200,6 @@ select:focus {
   
   .showcase .login-buttons .signin-btn{
     margin: 2rem 0;
-    padding: 1.5rem 0;
-    
+    padding: 1.5rem 2rem;
   }
 }

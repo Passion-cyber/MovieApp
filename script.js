@@ -1,20 +1,27 @@
-const openbutton = document.getElementById('open-btn');
-const closebutton =document.getElementById('close-btn');
+const openbtn = document.querySelector('.open-btn');
+const closeBtn = document.getElementById('close-btn');
 const overlay = document.querySelector('.overlay');
-const body = document.getElementById('body');
+const body = document.getElementsByTagName('body');
 const navmenu = document.querySelector('.navigation')
 
-function openModal(){
+console.log(openbtn, typeof openbtn);
+
+      
+
+ const openModal = function (){
   overlay.classList.toggle('hidden');
   navmenu.classList.add('open');
-  document.body.classList.toggle('scroll')
+  body.classList.add('scroll')
 }
 
-function closeModal(){
+const closeModal = function (){
   overlay.classList.toggle('hidden');
   navmenu.classList.remove('open');
-  document.body.classList.toggle('scroll')
+  body.classList.remove('scroll')
 }
+
+openbtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
 
 document.addEventListener('keypress', function(e){
     if(e.key == 'Enter' || e.key == "Escape"){
@@ -22,9 +29,6 @@ document.addEventListener('keypress', function(e){
     }
 })
 
-openbutton.addEventListener('click', openModal);
-closebutton.addEventListener('click', closeModal);
-      
 // slick slider
 $(document).ready(function(){
   $('.site-slider')
