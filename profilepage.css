@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-color: rgba(255, 255, 255, 1);
+  --black-color: rgba(0, 0, 0, 1);
+  --red-color: rgba(229, 9, 20, 1);
+  --footer-color: rgb(74, 72, 72);
+}
+
+body,
+html {
+  position: relative;
+  font-size: 10px;
+  font-weight: 400px;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  overflow-x: hidden;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--red-color);
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1.2rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-rounded {
+  border-radius: 5px;
+}
+
+.btn-xl {
+  font-size: 2rem;
+  padding: 1.1rem 2.1rem;
+  text-transform: capitalize;
+}
+
+.btn-lg {
+  font-size: 1rem;
+  padding: 0.8rem 1.3rem;
+  text-transform: uppercase;
+}
+
+.btn-icon {
+  margin-left: 1rem;
+}
+
+
+
+/* Core Header styles */
+.showcase {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.showcase-top {
+  position: relative;
+  z-index: 2;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* jhadhv kjjjjjjjjjsh */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container .element{
+    position: relative;
+    min-width: 100px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+
+.container .element:hover{
+    transform: scale(1.025);
+}
+
+.container .element p{
+    font-size: 1.5rem;
+    color: #999;
+    margin-bottom: 0;
+}
+
+.container .profile svg > p {
+    position: absolute;
+    top: 200px;
+}
+
+.showcase .login-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.showcase .login-buttons h3{
+  font-size: 4.5rem;
+  color: var(--white-color);
+  font-weight: 300;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.showcase .login-buttons .signin-btn{
+   background-color: transparent;
+   border: 1px solid #999;
+   display: inline-block;
+  margin: 2rem 0;
+  padding: 1rem;
+   color: #999;
+   cursor: pointer;
+}
+
+.showcase .login-buttons .signin-btn:hover{
+    opacity: 0.7;
+}
+
+@media(max-width: 600px){
+
+  .showcase .login-buttons h3{
+    font-size: 3rem;
+    margin: 2rem 0;
+  }
+  
+  .showcase .login-buttons .signin-btn{
+    margin: 2rem 0;
+    padding: 1.5rem 0;
+    
+  }
+}

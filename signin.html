@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./signin.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <div class="showcase-top">
+          <a href="./index.html">
+            <svg class="svg"
+              width="100"
+              height="45"
+              viewBox="0 0 167 45"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M158.067 21.4209L166.999 45C164.366 44.6246 161.735 44.155 159.054 43.7332L154.022 30.703L148.851 42.6563C146.313 42.2345 143.82 42.0925 141.282 41.7649L150.356 21.1398L142.128 0H149.745L154.352 11.8113L159.289 0H166.999L158.067 21.4209ZM136.11 0H129.199V40.875C131.456 41.0156 133.806 41.1084 136.11 41.3895V0ZM123.227 40.4054C116.928 39.9836 110.627 39.6096 104.187 39.4676V0H111.238V32.8119C115.282 32.9061 119.325 33.2337 123.227 33.4207V40.4054ZM96.6639 15.9842V23.0153H87.0269V38.9994H80.0677V0H99.8143V7.03112H87.0269V15.9842H96.6639ZM68.2195 7.03112V39.3748C65.8688 39.3748 63.4715 39.3748 61.1673 39.4676V7.03112H53.8796V0H75.5538V7.03112H68.2195ZM46.2633 23.3893C43.1609 23.3893 39.4931 23.3893 36.8603 23.5313V33.9844C40.9977 33.7018 45.1351 33.3743 49.3191 33.2337V39.9836L29.8081 41.5315V0H49.3191V7.03112H36.8603V16.4987C39.5875 16.4987 43.7715 16.3581 46.2633 16.3581V23.3893ZM7.19325 19.4526V44.0144C4.65495 44.297 2.39728 44.6246 0 45V0H6.72366L15.8911 25.5474V0H22.9434V42.0925C20.4516 42.5157 17.9133 42.6563 15.2326 43.0303L7.19325 19.4526Z"
+                fill="#E50914"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="showcase-area">
+            <form class="form" id="form">
+                <h2 class="signIn">Sign in</h2>
+                <div class="form-control">
+                    <input type="email" placeholder="Email or phone number">
+                </div>
+                <div class="form-control">
+                    <input type="Password" class="password" placeholder="Password">
+                </div>
+                <a href="./profilepage.html" class="button">sign in</a>
+                <div class="link">
+                 <p>  <input type="checkbox" class="specificity"> <span>Remember me</span> </p> 
+                 <a href="#" class="need-help">Need help?</a>
+                </div>
+                <p><svg width="10" height="10" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path d="M0 0H20V20H0V0Z" fill="url(#pattern0)"/>
+                  <defs>
+                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_76_96" transform="scale(0.0175439)"/>
+                  </pattern>
+                  <image id="image0_76_96" width="57" height="57" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA5CAYAAACMGIOFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowNTgwMTE3NDA3MjA2ODExODA4M0NDMTM4MEMyQTVFQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCOEE0QzYyREE2MTYxMUUyOEJFQUJDRTMzOERDQjM5MCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCOEE0QzYyQ0E2MTYxMUUyOEJFQUJDRTMzOERDQjM5MCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QUM3QUJGQTkzODIwNjgxMThDMTQ5OEFGOTgxQUJBQ0UiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDU4MDExNzQwNzIwNjgxMTgwODNDQzEzODBDMkE1RUIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz41CyRwAAAB3UlEQVR42mK0Dp/LzMDAUAzE6UCsxDB8wAsgngDEPSxAog6KhxuQAOIOIOZmAhJpDMMbpDJBfTycgQQTwwgAo54c9eSoJwcXYBl0DmJmYjDWlWIw05Vm0NcUZ5AQ4WXg52Vn+PX7DxD/Zfj89RfDz19/Gd5++M7w8s1XhvYZh4aOJxkZGRh8nTQYEoINGMSEuDDk2dlYwJiXmx3MV5QRANNDxpMgh9fm2DNYGcoMz+QqwMfBML3Rh0FWkm94FjxMTIwMrUXONPXggHsywFWTQV9DfPhWIawsTAzxgfrDu560NJJjEBbgHN71pIU+4ZJ05+F7DKu2X2V4+PQ9w4+ff4aeJzWUhPHK7zh0l6Fl2sGhnVzFRbnxyq/ffWPo50luTja88o+ffxj6ngS1UfGBf//+j/ZCRj056slRT46ODGCAIyuSKNK/Y14MQTUPn31kiC5aO7xj8sHTD8M/uT58+nH4e/LBkxEQkw+eDXNP/vv/n+HRcM+ToDFXYvuYQ9aTxJasNK0nbSLmUVSPeiQtYfjy7ddoi2fUk6OeHPXkqCdHPTnqyVFPjnpy1JOjnhz15KgnRz056slRT1LBky+GuR9fgDw5e5h7cjZoIKsRiL8BcT7D8Fp0D98XAhBgADmobvcuZlasAAAAAElFTkSuQmCC"/>
+                  </defs>
+                  </svg>
+                  <a href="#" class="lgfb">Login with facebook</a></p>
+                <p class="new">New to Netflix?<a href="./profilepage.html" class="here">Sign up now</a></p>
+                <p class="last-one">This page is protected by Google reCAPTCHA to <br> you're not a bot. <a href="#">Learn more.</a></p>
+            </form>
+        </div>
+        <div class="footer-container">
+            <footer class="footer">
+                <p>Questions? Call 1 -844-505-2993</p>
+                <div class="footer-cols">
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Cookie Preferences</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Cooperate Information</a></li>                
+                    </ul>
+                    <ul>                      
+                        <li><a href="#">Terms Of Use</a></li>
+                    </ul>
+                    <ul>                       
+                        <li><a href="#">Privacy</a></li>         
+                    </ul>
+                  
+                </div>    
+                <select name="country" id="country">
+                  <option value="En">English</option>
+                  <option value="AF">Afghanistan</option>
+                  <option value="AX">Åland Islands</option>
+                  <option value="AL">Albania</option>
+                  <option value="DZ">Algeria</option>
+                </select>
+            </footer>
+        </div>
+      </header>
+      <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</body>
+</html>

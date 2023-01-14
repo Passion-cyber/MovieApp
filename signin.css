@@ -1,0 +1,145 @@
+header {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url("https://i.ibb.co/vXqDmnh/background.jpg") no-repeat center
+    center/cover;
+  z-index: 3;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.showcase-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+.form {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 3rem 3rem 5rem 3rem;
+  margin-bottom: 3rem;
+  min-width: 26%;
+  /* height: 100%; */
+}
+
+.form h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+form .form-control input {
+  display: block;
+  width: 100%;
+  background-color: #333333;
+  border-radius: 2px;
+  border: none;
+  margin-bottom: 1rem;
+  height: 3rem;
+  padding: 1rem;
+}
+
+.form .form-control .btn {
+  display: block;
+  width: 100%;
+  padding: 1rem 4rem;
+}
+
+.form  .button {
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--red-color);
+  text-transform: capitalize;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.form  .button:hover{
+ opacity: 0.9;
+}
+
+.form .link{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.form .link p,
+.form .link a,
+.form .lgfb{
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: .5rem;
+}
+
+
+.form .lgfb,
+.form .new{
+  color: #8d8787;
+  
+}
+
+.form .new{
+  font-size: 1.3rem;
+  display: inline-block;
+  gap: 1rem;
+}
+
+.form .new .here{
+  display: inline-block;
+  margin-left: .5rem;
+  font-size: 1.3rem;
+  color: var(--white-color);
+}
+
+.form .last-one{
+  color: #8d8787;
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.form .last-one a {
+  color: blue;
+  font-size: 1rem;
+}
+
+.need-help{
+  color: var(--white-color);
+  transition: all 0.2s ease-in;
+}
+
+.need-help:hover,
+.form .new .here:hover,
+.form .last-one a:hover{
+  text-decoration: underline;
+}
+
+.footer-container {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 0;
+  margin-top: 3rem;
+  z-index: 10;
+}

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Interface</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <link rel="stylesheet" href="./Cinema.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body id="body">
+    <div class="overlay hidden"></div>
+    <header class="main-header">
+      <div class="logo">
+        <a href="./index.html">
+          <svg
+            class="svg"
+            width="100"
+            height="45"
+            viewBox="0 0 167 45"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M158.067 21.4209L166.999 45C164.366 44.6246 161.735 44.155 159.054 43.7332L154.022 30.703L148.851 42.6563C146.313 42.2345 143.82 42.0925 141.282 41.7649L150.356 21.1398L142.128 0H149.745L154.352 11.8113L159.289 0H166.999L158.067 21.4209ZM136.11 0H129.199V40.875C131.456 41.0156 133.806 41.1084 136.11 41.3895V0ZM123.227 40.4054C116.928 39.9836 110.627 39.6096 104.187 39.4676V0H111.238V32.8119C115.282 32.9061 119.325 33.2337 123.227 33.4207V40.4054ZM96.6639 15.9842V23.0153H87.0269V38.9994H80.0677V0H99.8143V7.03112H87.0269V15.9842H96.6639ZM68.2195 7.03112V39.3748C65.8688 39.3748 63.4715 39.3748 61.1673 39.4676V7.03112H53.8796V0H75.5538V7.03112H68.2195ZM46.2633 23.3893C43.1609 23.3893 39.4931 23.3893 36.8603 23.5313V33.9844C40.9977 33.7018 45.1351 33.3743 49.3191 33.2337V39.9836L29.8081 41.5315V0H49.3191V7.03112H36.8603V16.4987C39.5875 16.4987 43.7715 16.3581 46.2633 16.3581V23.3893ZM7.19325 19.4526V44.0144C4.65495 44.297 2.39728 44.6246 0 45V0H6.72366L15.8911 25.5474V0H22.9434V42.0925C20.4516 42.5157 17.9133 42.6563 15.2326 43.0303L7.19325 19.4526Z"
+              fill="#E50914"
+            />
+          </svg>
+        </a>
+      </div>
+      <iconify-icon
+        icon="mdi:hamburger-menu"
+        class="open-btn"
+        id="open-btn"
+      ></iconify-icon>
+      <div class="navigation">
+        <nav class="links">
+          <iconify-icon
+            icon="ri:close-fill"
+            class="close-btn"
+            id="close-btn"
+          ></iconify-icon>
+          <ul>
+            <li><a href="" class="list-items active">Ana Sayfa</a></li>
+            <li><a href="" class="list-items">Diziler</a></li>
+            <li><a href="" class="list-items">Filmler</a></li>
+            <li><a href="" class="list-items">Yeni ve Popüler</a></li>
+            <li><a href="" class="list-items">Listem</a></li>
+          </ul>
+        </nav>
+        <div class="icon-links">
+          <ul>
+            <li>
+              <a href="" class="icon-nav"
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.361 18.2168L14.601 13.2662C15.8249 11.8113 16.4955 9.98069 16.4955 8.07499C16.4955 3.62251 12.873 0 8.42048 0C3.968 0 0.34549 3.62251 0.34549 8.07499C0.34549 12.5275 3.968 16.15 8.42048 16.15C10.092 16.15 11.6849 15.6458 13.0467 14.6888L17.8429 19.677C18.0434 19.8852 18.313 20 18.602 20C18.8755 20 19.1349 19.8957 19.3319 19.7061C19.7504 19.3034 19.7637 18.6357 19.361 18.2168ZM8.42048 2.10652C11.7116 2.10652 14.389 4.78391 14.389 8.07499C14.389 11.3661 11.7116 14.0435 8.42048 14.0435C5.1294 14.0435 2.45201 11.3661 2.45201 8.07499C2.45201 4.78391 5.1294 2.10652 8.42048 2.10652Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li><a href="" class="icon-nav">ÇOCUK</a></li>
+            <li>
+              <a href="" class="icon-nav"
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17.9385 10.0388C17.9385 10.1247 17.8661 10.1971 17.7801 10.1971H17.5937H16.2366H3.05903H1.70192H1.51554C1.42959 10.1971 1.35721 10.1247 1.35721 10.0388V7.52901C1.35721 7.44215 1.42959 7.36977 1.51554 7.36977H8.96882H14.5312H17.7801C17.8661 7.36977 17.9385 7.44215 17.9385 7.52901V10.0388ZM16.2366 18.5732C16.2366 18.6094 16.2032 18.6429 16.167 18.6429H10.3259V11.5542H16.2366V18.5732ZM8.96882 18.6429H3.1287C3.0916 18.6429 3.05903 18.6094 3.05903 18.5732V11.5542H8.96882V18.6429ZM6.67891 1.35684C7.91117 1.35684 8.91273 2.3593 8.91273 3.59065V5.82447H6.67891C5.44756 5.82447 4.4451 4.82201 4.4451 3.59065C4.4451 2.3593 5.44756 1.35684 6.67891 1.35684ZM10.3259 4.9342C10.3259 3.85122 11.2072 2.9709 12.2901 2.9709C13.374 2.9709 14.2543 3.85122 14.2543 4.9342C14.2543 5.335 14.1295 5.70323 13.9214 6.01265H10.3259V4.9342ZM17.7801 6.01265H15.4187C15.5382 5.67428 15.6115 5.31419 15.6115 4.9342C15.6115 3.103 14.1213 1.61288 12.2901 1.61288C11.4361 1.61288 10.6643 1.94673 10.0753 2.47872C9.60395 1.0447 8.26855 -0.000274658 6.67891 -0.000274658C4.69933 -0.000274658 3.08798 1.61107 3.08798 3.59065C3.08798 4.53068 3.46074 5.37662 4.05606 6.01265H1.51554C0.679554 6.01265 9.15527e-05 6.69302 9.15527e-05 7.52901V10.0388C9.15527e-05 10.8747 0.679554 11.5542 1.51554 11.5542H1.70192V18.5732C1.70192 19.3603 2.34157 20 3.1287 20H16.167C16.9541 20 17.5937 19.3603 17.5937 18.5732V11.5542H17.7801C18.6161 11.5542 19.2956 10.8747 19.2956 10.0388V7.52901C19.2956 6.69302 18.6161 6.01265 17.7801 6.01265Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="icon-nav"
+                ><svg
+                  width="20"
+                  height="17"
+                  viewBox="0 0 20 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.6529 13.5882C16.982 13.5882 16.4382 13.0444 16.4382 12.3735V8.35574C16.4382 5.50652 14.5872 3.08996 12.0222 2.24203C12.0293 2.17324 12.0329 2.10352 12.0329 2.03289C12.0329 0.911953 11.121 0 10 0C8.87908 0 7.96712 0.911953 7.96712 2.03289C7.96712 2.10352 7.97079 2.17324 7.97782 2.24203C5.41286 3.08996 3.56188 5.50652 3.56188 8.35574V12.3735C3.56188 13.0444 3.01802 13.5882 2.34716 13.5882C1.44778 13.5882 0.718719 14.3173 0.718719 15.2167C0.718719 16.1161 1.44782 16.8452 2.34716 16.8452H17.6529C18.5523 16.8452 19.2813 16.1161 19.2813 15.2167C19.2813 14.3173 18.5522 13.5882 17.6529 13.5882ZM10 1.17188C10.4552 1.17188 10.8288 1.52703 10.8588 1.97477C10.5779 1.9373 10.2913 1.91762 10 1.91762C9.70876 1.91762 9.42216 1.9373 9.14118 1.97477C9.17118 1.52703 9.54478 1.17188 10 1.17188Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="icon-nav"
+                ><img src="./images/smallcocuk.png" alt=""/></a>
+            </li>
+            <li>
+              <a href="" class="icon-nav rotate"
+                ><svg
+                  width="14"
+                  height="8"
+                  viewBox="0 0 14 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.92907 7.07973L13.968 0.645906C13.9838 0.633879 13.9946 0.616512 13.9985 0.59707C14.0023 0.577628 13.9989 0.557451 13.9889 0.540332C13.9789 0.523213 13.963 0.510332 13.9442 0.50411C13.9254 0.497888 13.905 0.498754 13.8867 0.506546H0.113253C0.0950305 0.498754 0.0745892 0.497888 0.0557726 0.50411C0.0369559 0.510332 0.0210601 0.523213 0.011074 0.540332C0.001088 0.557451 -0.0023004 0.577628 0.00154573 0.59707C0.00539187 0.616512 0.0162077 0.633879 0.0319596 0.645906L6.07093 7.07973C6.19034 7.20627 6.33434 7.30707 6.4941 7.37597C6.65386 7.44487 6.82602 7.48041 7 7.48041C7.17398 7.48041 7.34614 7.44487 7.5059 7.37597C7.66566 7.30707 7.80966 7.20627 7.92907 7.07973Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="cinema-hero hero-content">
+      <div class="cinema-top">
+        <h1>yanimda</h1>
+        <h2>Kal</h2>
+        <li>
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4_14)">
+              <path
+                d="M0 2.66667C0 1.19391 1.19391 0 2.66667 0H29.3333C30.8061 0 32 1.19391 32 2.66667V29.3333C32 30.8061 30.8061 32 29.3333 32H2.66667C1.19391 32 0 30.8061 0 29.3333V2.66667Z"
+                fill="#B9090B"
+              />
+              <path
+                d="M9.08495 12.5227H7.34629V6.60268H4.98895V5.09868H11.4423V6.60268H9.08495V12.5227Z"
+                fill="white"
+              />
+              <path
+                d="M15.2221 12.6933C14.6675 12.6933 14.1555 12.5974 13.6861 12.4054C13.224 12.2134 12.8222 11.9431 12.4809 11.5947C12.1466 11.2462 11.8835 10.8373 11.6915 10.368C11.5066 9.89158 11.4142 9.37247 11.4142 8.81068C11.4142 8.24891 11.5066 7.73335 11.6915 7.26402C11.8835 6.78758 12.1466 6.37514 12.4809 6.02668C12.8222 5.67824 13.224 5.40802 13.6861 5.21602C14.1555 5.02402 14.6675 4.92802 15.2221 4.92802C15.784 4.92802 16.296 5.02402 16.7581 5.21602C17.2275 5.40802 17.6328 5.67824 17.9741 6.02668C18.3155 6.37514 18.5787 6.78758 18.7635 7.26402C18.9555 7.73335 19.0515 8.24891 19.0515 8.81068C19.0515 9.37247 18.9555 9.89158 18.7635 10.368C18.5787 10.8373 18.3155 11.2462 17.9741 11.5947C17.6328 11.9431 17.2275 12.2134 16.7581 12.4054C16.296 12.5974 15.784 12.6933 15.2221 12.6933ZM15.2221 11.1573C15.6275 11.1573 15.9867 11.0613 16.2995 10.8693C16.6124 10.6702 16.8541 10.3929 17.0248 10.0373C17.2027 9.6818 17.2915 9.27291 17.2915 8.81068C17.2915 8.34135 17.2027 7.93247 17.0248 7.58402C16.8541 7.22847 16.6124 6.95468 16.2995 6.76268C15.9867 6.56358 15.6275 6.46402 15.2221 6.46402C14.824 6.46402 14.4684 6.56358 14.1555 6.76268C13.8497 6.95468 13.608 7.22847 13.4301 7.58402C13.2595 7.93247 13.1742 8.34135 13.1742 8.81068C13.1742 9.27291 13.2595 9.6818 13.4301 10.0373C13.608 10.3929 13.8497 10.6702 14.1555 10.8693C14.4684 11.0613 14.824 11.1573 15.2221 11.1573Z"
+                fill="white"
+              />
+              <path
+                d="M19.6812 12.5227V5.09868H22.7532C23.3648 5.09868 23.8911 5.20535 24.3319 5.41868C24.7728 5.63201 25.1105 5.93068 25.3452 6.31468C25.5799 6.69868 25.6972 7.14668 25.6972 7.65868C25.6972 8.17068 25.5799 8.62224 25.3452 9.01335C25.1105 9.39735 24.7728 9.69601 24.3319 9.90935C23.8911 10.1227 23.3648 10.2293 22.7532 10.2293H21.4199V12.5227H19.6812ZM21.4199 8.75735H22.4972C23.0021 8.75735 23.3684 8.66491 23.5959 8.48001C23.8235 8.28801 23.9372 8.01424 23.9372 7.65868C23.9372 7.31024 23.8235 7.04357 23.5959 6.85868C23.3684 6.66668 23.0021 6.57068 22.4972 6.57068H21.4199V8.75735Z"
+                fill="white"
+              />
+              <path
+                d="M10.5829 27.1893V16.7547L7.48419 17.7067V15.5227L13.0469 13.9547V27.1893H10.5829Z"
+                fill="white"
+              />
+              <path
+                d="M19.6232 27.4693C18.5779 27.4693 17.6632 27.1956 16.8792 26.648C16.0952 26.088 15.4855 25.304 15.0499 24.296C14.6268 23.2756 14.4152 22.0747 14.4152 20.6933C14.4152 19.312 14.6268 18.1173 15.0499 17.1093C15.4855 16.0889 16.0952 15.3049 16.8792 14.7573C17.6632 14.1973 18.5779 13.9173 19.6232 13.9173C20.681 13.9173 21.5956 14.1973 22.3672 14.7573C23.1512 15.3049 23.7548 16.0889 24.1779 17.1093C24.6135 18.1173 24.8312 19.312 24.8312 20.6933C24.8312 22.0747 24.6135 23.2756 24.1779 24.296C23.7548 25.304 23.1512 26.088 22.3672 26.648C21.5956 27.1956 20.681 27.4693 19.6232 27.4693ZM19.6232 25.2667C20.4446 25.2667 21.0979 24.8623 21.5832 24.0533C22.081 23.2444 22.3299 22.1244 22.3299 20.6933C22.3299 19.2623 22.081 18.1423 21.5832 17.3333C21.0979 16.5244 20.4446 16.12 19.6232 16.12C18.8019 16.12 18.1423 16.5244 17.6446 17.3333C17.1592 18.1423 16.9166 19.2623 16.9166 20.6933C16.9166 22.1244 17.1592 23.2444 17.6446 24.0533C18.1423 24.8623 18.8019 25.2667 19.6232 25.2667Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4_14">
+                <rect width="32" height="32" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <p>Türkiye’de Bugün 4 Numara</p>
+        </li>
+      </div>
+      <div class="cinema-center">
+        <p>
+          Küçük yaşta başının çaresine bakmayı öğrenen ve çok çalışarak iş
+          dünyasında önemli bir konuma gelen Emir, bir gün sokak şarkıcısı bir
+          kızla karşılaşır ve hayatı değişir.
+        </p>
+      </div>
+      <div class="cinema-bottom">
+        <a href="#" class="cinema-btn">
+          <svg
+            width="20"
+            height="22"
+            viewBox="0 0 20 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 0.333336L20 11L0 21.6667V0.333336Z" fill="#141414" />
+          </svg>
+          <span class="cinema-btn-text">Oynat</span>
+        </a>
+        <a href="#" class="cinema-btn-secondary">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M27.3334 14C27.3334 21.364 21.364 27.3333 14 27.3333C6.63602 27.3333 0.666687 21.364 0.666687 14C0.666687 6.636 6.63602 0.666664 14 0.666664C21.364 0.666664 27.3334 6.636 27.3334 14ZM24.6667 14C24.6667 11.171 23.5429 8.45791 21.5425 6.45753C19.5421 4.45714 16.829 3.33333 14 3.33333C11.171 3.33333 8.45794 4.45714 6.45755 6.45753C4.45716 8.45791 3.33335 11.171 3.33335 14C3.33335 16.829 4.45716 19.5421 6.45755 21.5425C8.45794 23.5429 11.171 24.6667 14 24.6667C16.829 24.6667 19.5421 23.5429 21.5425 21.5425C23.5429 19.5421 24.6667 16.829 24.6667 14ZM12.6667 22V12.6667H15.3334V22H12.6667ZM14 10.3333C13.7825 10.3355 13.5667 10.2936 13.3658 10.2102C13.1648 10.1268 12.9828 10.0036 12.8307 9.848C12.6701 9.69661 12.5428 9.51332 12.4572 9.30988C12.3715 9.10645 12.3294 8.88736 12.3334 8.66666C12.3334 8.20266 12.4974 7.808 12.8294 7.48533C13.1587 7.16266 13.5494 7 14 7C14.4494 7 14.84 7.16266 15.1694 7.48533C15.5 7.808 15.6667 8.20266 15.6667 8.66666C15.6667 9.13066 15.5014 9.52533 15.1694 9.848C15.0172 10.0036 14.8352 10.1268 14.6343 10.2102C14.4333 10.2936 14.2176 10.3355 14 10.3333Z"
+              fill="white"
+            />
+          </svg>
+          <p class="cinema-btn-secondary-text">Daha Fazla Bilgi</p>
+        </a>
+      </div>
+   
+      <div class="container-fluid p-0">
+        <div class="parent-slide-container">
+        <p class="popular">Netflix'te Popüler</p>
+        <div class="site-slider position px-md-4">
+          <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+                <img src="./images/carousel1.png" class="imagery img-fluid" alt="">                    
+          </div>
+          <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+                <img src="./images/carousel2.png"class="imagery img-fluid"alt="">
+          </div>
+          <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+                <img src="./images/carousel3.png"class="imagery img-fluid" alt="">
+          </div>
+          <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+                <img src="./images/carousel4.png"class="imagery img-fluid" alt="">
+          </div>
+          <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+                <img src="./images/carousel5.png"class="imagery img-fluid" alt="">
+          </div>
+          <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+                <img src="./images/carousel6.png"class="imagery img-fluid" alt="">
+          </div>
+          <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+            <img src="./images/carousel3.png"class="imagery img-fluid" alt="">
+      </div>
+      
+        </div>
+        <div class="slider-btn">
+        <!-- <iconify-icon icon="ic:outline-keyboard-arrow-left" class="prev-btn"></iconify-icon> -->
+       <iconify-icon icon="ic:outline-keyboard-arrow-right" class="next-btn"></iconify-icon>
+     </div>
+    </div>
+        
+      </div>      
+      
+    </section>
+
+    <div class="full-width-container">
+
+      
+    </div>
+    <section>
+      <div class="container-fluid p-0">
+        <div class="parent-slide-container"> 
+        <p class="popular netscape">Kemal, İzlemeye Devam Et</p>
+        <div class="site-slider2 position px-md-4">
+          
+          <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+                <img src="./images/MoviePoster.png" class="imagery img-fluid" alt="">
+                <svg width="175" height="3" viewBox="0 0 175 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2785_134)">
+                  <rect width="175" height="3" fill="#6D6D6E" fill-opacity="0.7"/>
+                  <rect width="20" height="3" fill="#B9090B"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_2785_134">
+                  <rect width="175" height="3" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+          </div>
+          <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+                <img src="./images/MoviePoster6.png
+                "class="imagery img-fluid"alt="">
+                <svg width="175" height="3" viewBox="0 0 175 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2785_134)">
+                  <rect width="175" height="3" fill="#6D6D6E" fill-opacity="0.7"/>
+                  <rect width="20" height="3" fill="#B9090B"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_2785_134">
+                  <rect width="175" height="3" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+          </div>
+          <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+                <img src="./images/MoviePoster2.png"class="imagery img-fluid" alt="">
+                <svg width="175" height="3" viewBox="0 0 175 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2785_134)">
+                  <rect width="175" height="3" fill="#6D6D6E" fill-opacity="0.7"/>
+                  <rect width="20" height="3" fill="#B9090B"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_2785_134">
+                  <rect width="175" height="3" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+          </div>
+          <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+                <img src="./images/MoviePoster3.png"class="imagery img-fluid" alt="">
+                <svg width="175" height="3" viewBox="0 0 175 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2785_134)">
+                  <rect width="175" height="3" fill="#6D6D6E" fill-opacity="0.7"/>
+                  <rect width="20" height="3" fill="#B9090B"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_2785_134">
+                  <rect width="175" height="3" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+          </div>
+          <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+                <img src="./images/MoviePoster4.png"class="imagery img-fluid" alt="">
+                <svg width="175" height="3" viewBox="0 0 175 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2785_134)">
+                  <rect width="175" height="3" fill="#6D6D6E" fill-opacity="0.7"/>
+                  <rect width="20" height="3" fill="#B9090B"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_2785_134">
+                  <rect width="175" height="3" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+          </div>
+          <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+                <img src="./images/MoviePoster5.png"class="imagery img-fluid" alt="">
+                <svg width="175" height="3" viewBox="0 0 175 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2785_134)">
+                  <rect width="175" height="3" fill="#6D6D6E" fill-opacity="0.7"/>
+                  <rect width="20" height="3" fill="#B9090B"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_2785_134">
+                  <rect width="175" height="3" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+          </div>
+          <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+            <img src="./images/MoviePoster6.png"class="imagery img-fluid" alt="">
+            <svg width="175" height="3" viewBox="0 0 175 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_2785_134)">
+              <rect width="175" height="3" fill="#6D6D6E" fill-opacity="0.7"/>
+              <rect width="20" height="3" fill="#B9090B"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_2785_134">
+              <rect width="175" height="3" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+      </div>
+      <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+        <img src="./images/MoviePoster2.png"class="imagery img-fluid" alt="">
+        <svg width="175" height="3" viewBox="0 0 175 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_2785_134)">
+          <rect width="175" height="3" fill="#6D6D6E" fill-opacity="0.7"/>
+          <rect width="20" height="3" fill="#B9090B"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_2785_134">
+          <rect width="175" height="3" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+  </div>
+        </div>
+        <div class="slider-btntwo">
+           <!-- <iconify-icon icon="ic:outline-keyboard-arrow-left" class="prev-btn"></iconify-icon> -->
+          <iconify-icon icon="ic:outline-keyboard-arrow-right" class="next-btn"></iconify-icon>
+        </div>
+      </div>    
+    </div>  
+    </section>
+    <div class="full-width-container">
+
+      
+    </div>
+    <section>
+    <div class="container-fluid p-0">
+      <div class="parent-slide-container"> 
+              <p class="popular">Gündemdekiler</p>
+      <div class="site-slider3 position px-md-4">
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/MoviePoster2.png" class="imagery img-fluid" alt="">                    
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/carousel2.png"class="imagery img-fluid"alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/MoviePoster.jpg"class="imagery img-fluid" alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/carousel4.png"class="imagery img-fluid" alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/MoviePoster3.png"class="imagery img-fluid" alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+          <img src="./images/MoviePoster6.png"class="imagery img-fluid" alt="">
+    </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/carousel6.png"class="imagery img-fluid" alt="">
+        </div>
+      
+      </div>
+      <div class="slider-btnthree">
+         <!-- <iconify-icon icon="ic:outline-keyboard-arrow-left" class="prev-btn"></iconify-icon> -->
+        <iconify-icon icon="ic:outline-keyboard-arrow-right" class="next-btn"></iconify-icon>
+      </div>
+    </div>      
+  </div>
+
+    
+  </section>
+
+  <div class="full-width-container">
+
+    
+  </div>
+
+  <section>
+    <div class="container-fluid p-0">
+      <div class="parent-slide-container"> 
+      <p class="popular">Netflix Orijinal İçerikleri</p>
+      <div class="site-slider4 position px-md-4">
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/progress.png" class="imagery img-fluid" alt="">                    
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/progress1.png"class="imagery img-fluid"alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/progress2.png"class="imagery img-fluid" alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/progress3.png"class="imagery img-fluid" alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/progress2.png"class="imagery img-fluid" alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+          <img src="./images/progress.png"class="imagery img-fluid" alt="">
+    </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/progress3.png"class="imagery img-fluid" alt="">
+        </div>
+      
+      </div>
+      <div class="slider-btnfour">
+         <!-- <iconify-icon icon="ic:outline-keyboard-arrow-left" class="prev-btn"></iconify-icon> -->
+        <iconify-icon icon="ic:outline-keyboard-arrow-right" class="next-btn"></iconify-icon>
+      </div>
+    </div>      
+    </div>
+    
+  </section>
+
+  <div class="full-width-container">
+
+    
+  </div>
+  <section>
+    <div class="container-fluid p-0">
+      <div class="parent-slide-container"> 
+      <p class="popular">Türkiye'de Bugünün Top 10 Listesi</p>
+      <div class="site-slider5 position px-md-4">
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/cam1.png" class="imagery img-fluid" alt="">                    
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/cam2.png"class="imagery img-fluid"alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/cam3.png"class="imagery img-fluid" alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/cam4.png"class="imagery img-fluid" alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/cam2.png"class="imagery img-fluid" alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+          <img src="./images/cam1.png"class="imagery img-fluid" alt="">
+    </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/cam2.png"class="imagery img-fluid" alt="">
+        </div>
+      
+      </div>
+      <div class="slider-btnfive">
+         <!-- <iconify-icon icon="ic:outline-keyboard-arrow-left" class="prev-btn"></iconify-icon> -->
+        <iconify-icon icon="ic:outline-keyboard-arrow-right" class="next-btn"></iconify-icon>
+      </div>
+    </div>      
+    </div>
+    
+  </section>
+
+  <div class="full-width-container">
+
+    
+  </div>
+
+  <section>
+    <div class="container-fluid p-0">
+      <div class="parent-slide-container"> 
+      <p class="popular">Yeniden İzlei</p>
+      <div class="site-slider6 position px-md-4">
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/slider1.png" class="imagery img-fluid" alt="">                    
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/slider2.png"class="imagery img-fluid"alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/slider3.png"class="imagery img-fluid" alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/slider4.png"class="imagery img-fluid" alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/slider5.png"class="imagery img-fluid" alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+          <img src="./images/slider6.png"class="imagery img-fluid" alt="">
+    </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/slider4.png"class="imagery img-fluid" alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/slider3.png"class="imagery img-fluid" alt="">
+        </div>
+      
+      </div>
+      <div class="slider-btnsix">
+         <iconify-icon icon="ic:outline-keyboard-arrow-left" class="prev-btn"></iconify-icon>
+        <!-- <iconify-icon icon="ic:outline-keyboard-arrow-right" class="next-btn"></iconify-icon> -->
+      </div>
+    </div>      
+    </div>
+    
+  </section>
+
+  <div class="full-width-container">
+
+    
+  </div>
+    
+  <section>
+    <div class="container-fluid p-0">
+      <div class="parent-slide-container"> 
+      <p class="popular">Listem</p>
+      <div class="site-slider7 position px-md-4" >
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/slider5.png" class="imagery img-fluid" alt="">                    
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/slider2.png"class="imagery img-fluid"alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/sliderslides1.png"class="imagery img-fluid" alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/sliderslides2.png"class="imagery img-fluid" alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/slider5.png"class="imagery img-fluid" alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+          <img src="./images/slider6.png"class="imagery img-fluid" alt="">
+    </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/sliderslides1.png"class="imagery img-fluid" alt="">
+        </div>
+        <div class="swiper-slide col-md-2 pt-md-5 pt-4">
+              <img src="./images/slider3.png"class="imagery img-fluid" alt="">
+        </div>
+      
+      </div>
+      <div class="slider-btnseven">
+         <!-- <iconify-icon icon="ic:outline-keyboard-arrow-left" class="prev-btn"></iconify-icon> -->
+         <iconify-icon icon="ic:outline-keyboard-arrow-right" class="next-btn"></iconify-icon>
+
+        <!-- <iconify-icon icon="ic:outline-keyboard-arrow-right" class="next-btn"></iconify-icon> -->
+      </div>
+    </div>      
+    </div>
+    
+  </section>
+
+  <div class="full-width-container">
+
+    
+  </div>
+
+  <footer class="footer">
+    <iconify-icon icon="fe:facebook" class="cinema-icons"></iconify-icon>
+    <iconify-icon icon="typcn:social-instagram" class="cinema-icons"></iconify-icon>
+    <iconify-icon icon="prime:twitter" class="cinema-icons"></iconify-icon>
+    <iconify-icon icon="typcn:social-youtube" class="cinema-icons"></iconify-icon>
+    <div class="cinema-trick"></div>
+    <div class="footer-cols">
+        <ul>
+            <li><a href="#">Seslendirme ve Alt Yazı</a></li>
+            <li><a href="#">Medya Merkezi</a></li>
+            <li><a href="#">Gizlilik</a></li>
+            <li><a href="#">Corporate Information</a></li>
+            <li><a href="#">Bize Ulaşın</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Sesli Betimleme</a></li>
+            <li><a href="#">Yatırımcı İlişkileri</a></li>
+            <li><a href="#">Yasal Hükümler</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Yardım Merkezi</a></li>
+            <li><a href="#">İş İmkanları</a></li>
+            <li><a href="#">Çerez Tercihleri</a></li>
+            <li><a href="#">Speed Test</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Hediye Kartları</a></li>
+            <li><a href="#">Kullanım Koşulları</a></li>
+            <li><a href="#">Kurumsal Bilgiler</a></li>
+        </ul>
+    </div>    
+    <select name="country" id="country">
+      <option value="En">Hizmet Kodu</option>
+      <option value="AF">Pigin</option>
+      <option value="AX">Igbo</option>
+      <option value="AL">Hausa</option>
+      <option value="DZ">Yoruba</option>
+    </select>
+    <p class="footer-text">© 1997-2021 Netflix, Inc.  {i-062d573a0ee099242}</p>
+</footer>
+    
+    
+    
+    
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- slick slider -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="./script.js"></script>
+  </body>
+</html>
