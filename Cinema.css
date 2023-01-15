@@ -384,6 +384,12 @@ footer .cinema-trick{
   margin-bottom: 1rem;
 }
 
+@media (max-height: 600px) {
+  .cinema-hero {
+    margin-top: 5rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   /* header and Hamburger menu on small screens */
   .open-btn{
@@ -449,7 +455,7 @@ footer .cinema-trick{
   .navigation .icon-links ul .rotate{
     position: absolute;
     left: 55%;
-    top: 63%;
+    top: 70%;
   }
 
   /* Cinema hero section */
@@ -505,11 +511,4 @@ footer .cinema-trick{
   gap: 1rem;
 
 }
-
-/* .cinema-bottom .cinema-btn-secondary:hover,
-.cinema-bottom .cinema-btn:hover{
-  opacity: 0.75;
-  text-decoration: none;
-  color: var(--white-color);
-} */
 }
