@@ -4,37 +4,29 @@ const overlay = document.querySelector('.overlay');
 const body = document.getElementsByTagName('body');
 const navmenu = document.querySelector('.navigation')
 
-console.log(openbtn, typeof openbtn);
-
-      
-
- const openModal = function (){
+ 
+ const openModal = () =>{
   overlay.classList.toggle('hidden');
   navmenu.classList.add('open');
   body.classList.add('scroll')
 }
 
-const closeModal = function (){
+const closeModal = () =>{
   overlay.classList.toggle('hidden');
   navmenu.classList.remove('open');
   body.classList.remove('scroll')
-}
+}  
 
 openbtn.addEventListener('click', openModal);
-closeBtn.addEventListener('click', closeModal);
-
-document.addEventListener('keypress', function(e){
-    if(e.key == 'Enter' || e.key == "Escape"){
-        closeModal();
-    }
-})
+closeBtn.addEventListener('click', closeModal); 
+overlay.addEventListener('click', closeModal);
 
 // slick slider
 $(document).ready(function(){
   $('.site-slider')
   .not('.slick-initialized')
   .slick({
-       autoplay: true,
+       autoplay: false,
        autoplayspeed: 9000,
        infinite: true,
        prevArrow: ".slider-btn .prev-btn",
@@ -78,7 +70,7 @@ $(document).ready(function(){
        prevArrow: ".slider-btntwo .prev-btn",
        nextArrow: ".slider-btntwo .next-btn",
        slidesToShow: 5,
-       slidesToScroll: 3,
+       slidesToScroll: 1,
        responsive: [
         {
           breakpoint: 768,
@@ -110,7 +102,7 @@ $(document).ready(function(){
   $('.site-slider3')
   .not('.slick-initialized')
   .slick({
-       autoplay: true,
+       autoplay: false,
        autoplayspeed: 5000,
        infinite: true,
        prevArrow: ".slider-btnthree .prev-btn",
@@ -186,7 +178,7 @@ $(document).ready(function(){
   $('.site-slider5')
   .not('.slick-initialized')
   .slick({
-       autoplay: true,
+       autoplay: false,
        autoplayspeed: 4000,
        infinite: true,
        prevArrow: ".slider-btnfive .prev-btn",
@@ -264,7 +256,7 @@ $(document).ready(function(){
   $('.site-slider7')
   .not('.slick-initialized')
   .slick({
-       autoplay: true,
+       autoplay: false,
        autoplayspeed: 4000,
        infinite: true,
        speed: 400,
