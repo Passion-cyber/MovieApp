@@ -110,8 +110,8 @@ select:focus {
 }
 
 .scalewise {
-  transform: rotate(45deg);
-  transition: transform 0.3 ease-in;
+  transform: rotate(90deg);
+  /* transition: transform 0.3 ease-in; */
 }
 
 /* Core Header styles */
@@ -225,7 +225,7 @@ option {
   font-size: 25px;
   position: absolute;
   top: 1.5rem;
-  right: 12%;
+  right: 11.5%;
   cursor: pointer;
 }
 
@@ -330,15 +330,13 @@ option {
 .bottom-container {
   display: flex;
   align-items: center;
+  text-align: center; 
   flex-direction: column;
   margin: 3rem auto;
-  max-width: 70%;
-  margin-top: 3rem;
-  text-align: center;
-  align-items: center;
+  width: 100%;
 }
 
-.bottom-container p {
+.bottom-container .hero-subtext{
   font-size: 1.7rem;
   margin-bottom: -1rem;
 }
@@ -395,6 +393,7 @@ footer .footer-text {
   margin-top: 2rem;
 }
 
+.rotate
 @media (max-width: 888px) {
   /* Mobile screens Responsive Size */
 

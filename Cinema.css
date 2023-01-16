@@ -90,19 +90,19 @@ select:focus {
   opacity: 0.9;
 }
 
-.open-btn{
+.open-btn {
   font-size: 35px;
   color: var(--red-color);
   display: none;
 }
 
-.close-btn{
+.close-btn {
   font-size: 30px;
   display: none;
   color: var(--red-color);
 }
 
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -115,11 +115,11 @@ select:focus {
   z-index: 2;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-.scroll{
+.scroll {
   overflow: hidden;
 }
 
@@ -137,23 +137,22 @@ select:focus {
   justify-content: space-between;
   gap: 4rem;
   background-color: var(--black-color);
-
 }
 
-.navigation{
+.navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 
-.navigation .links ul{
+.navigation .links ul {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-.navigation .links ul .list-items{
+.navigation .links ul .list-items {
   display: inline-block;
   margin-left: 1rem;
   font-size: 1.2rem;
@@ -162,18 +161,18 @@ select:focus {
 }
 
 .navigation .links ul .list-items:hover,
-.navigation .icon-links ul .icon-nav:hover{
- color: var(--red-color);
- text-decoration: none;
+.navigation .icon-links ul .icon-nav:hover {
+  color: var(--red-color);
+  text-decoration: none;
 }
 
-.navigation .icon-links ul{
+.navigation .icon-links ul {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.navigation .icon-links ul .icon-nav{
+.navigation .icon-links ul .icon-nav {
   display: inline-block;
   margin-left: 1rem;
   font-size: 1.2rem;
@@ -181,13 +180,13 @@ select:focus {
 }
 
 /* making the big image tiny */
-.navigation .icon-links .icon-nav img{
+.navigation .icon-links .icon-nav img {
   width: 20px;
   height: auto;
 }
 
 /* cinema Hero Section */
-.cinema-hero{
+.cinema-hero {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -195,22 +194,22 @@ select:focus {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 -50px;
+  max-height: 60rem;
 }
 
-.hero-content{
+.hero-content {
   position: relative;
   padding-top: 5rem;
   padding-left: 2rem;
-
 }
 
-.cinema-top h1{
+.cinema-top h1 {
   font-size: 8rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.cinema-top h2{
+.cinema-top h2 {
   position: relative;
   font-size: 5rem;
   font-weight: 300;
@@ -219,85 +218,84 @@ select:focus {
   left: 11.5rem;
 }
 
-.cinema-top li{
+.cinema-top li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
 }
 
-.cinema-top li p{
+.cinema-top li p {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.cinema-center{
+.cinema-center {
   max-width: 400px;
 }
 
-.cinema-center p{
+.cinema-center p {
   font-weight: 400;
   font-size: 1.5rem;
   text-align: justify;
 }
 
-.cinema-bottom{
+.cinema-bottom {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-.cinema-bottom .cinema-btn{
+.cinema-bottom .cinema-btn {
   display: flex;
   text-align: center;
   align-items: center;
   background-color: var(--white-color);
   padding: 1rem 3rem;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   gap: 2rem;
   cursor: pointer;
 }
 
-.cinema-bottom .cinema-btn span{
+.cinema-bottom .cinema-btn span {
   color: var(--black-color);
   font-size: 1.5rem;
 }
 
-.cinema-bottom .cinema-btn-secondary{
+.cinema-bottom .cinema-btn-secondary {
   display: flex;
   text-align: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.2);
-  padding: .5rem 3rem;
-  border-radius: .4rem;
+  padding: 0.5rem 3rem;
+  border-radius: 0.4rem;
   gap: 2rem;
-
 }
 
 .cinema-bottom .cinema-btn-secondary:hover,
-.cinema-bottom .cinema-btn:hover{
+.cinema-bottom .cinema-btn:hover {
   opacity: 0.75;
   text-decoration: none;
   color: var(--white-color);
 }
 
 /* Slider styles  */
-.popular{
+.popular {
   font-size: 1.5rem;
   padding: 1rem 2rem 0 2rem;
 }
-.netscape{
+.netscape {
   padding: 0 2rem;
   font-size: 1.5rem;
 }
 
-.imagery{
-width: 200px;
-height: auto;
+.imagery {
+  width: 200px;
+  height: auto;
 }
 
-.parent-slide-container{
-  position: relative
+.parent-slide-container {
+  position: relative;
 }
 
 .parent-slide-container .slider-btn,
@@ -305,21 +303,20 @@ height: auto;
 .parent-slide-container .slider-btnthree,
 .parent-slide-container .slider-btnfour,
 .parent-slide-container .slider-btnfive,
-.parent-slide-container .slider-btnseven{
+.parent-slide-container .slider-btnseven {
   position: absolute;
   right: 0;
   top: 50%;
   background-color: transparent;
   padding: 2rem;
 }
-
 
 .slider-btn .next-btn,
 .slider-btntwo .next-btn,
 .slider-btnthree .next-btn,
 .slider-btnfour .next-btn,
 .slider-btnfive .next-btn,
-.slider-btnseven .next-btn{
+.slider-btnseven .next-btn {
   position: absolute;
   top: 0%;
   right: 0;
@@ -329,17 +326,15 @@ height: auto;
   cursor: pointer;
 }
 
-.parent-slide-container .slider-btnsix{
+.parent-slide-container .slider-btnsix {
   position: absolute;
   left: 0;
   top: 50%;
   background-color: transparent;
   padding: 2rem;
-
 }
 
-
-.slider-btnsix{
+.slider-btnsix {
   position: absolute;
   top: 0%;
   left: 0;
@@ -347,9 +342,8 @@ height: auto;
   color: var(--white-color);
   z-index: 5;
   cursor: pointer;
-
 }
-.slider-btn2 .next-btn{
+.slider-btn2 .next-btn {
   position: relative;
   bottom: 0;
   right: 50%;
@@ -357,30 +351,30 @@ height: auto;
   color: var(--red-color);
 }
 
-.site-slider5{
+.site-slider5 {
   background-color: var(--carousel-color);
   padding: 1rem;
 }
 
 /* Full width containers */
-.full-width-container{
+.full-width-container {
   width: 100%;
   min-height: 20px;
 }
 
 /* cinema footer styles */
-footer .cinema-icons{
+footer .cinema-icons {
   font-size: 2rem;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   color: #999;
   cursor: pointer;
   transition: color 0.1s ease-in;
 }
 
-footer .cinema-icons:hover{
+footer .cinema-icons:hover {
   color: var(--red-color);
 }
-footer .cinema-trick{
+footer .cinema-trick {
   margin-bottom: 1rem;
 }
 
@@ -392,12 +386,12 @@ footer .cinema-trick{
 
 @media only screen and (max-width: 768px) {
   /* header and Hamburger menu on small screens */
-  .open-btn{
+  .open-btn {
     display: block;
     cursor: pointer;
   }
 
-  .close-btn{
+  .close-btn {
     position: absolute;
     display: block;
     top: 15px;
@@ -405,7 +399,7 @@ footer .cinema-trick{
     cursor: pointer;
   }
 
-  .navigation{
+  .navigation {
     justify-content: flex-start;
     position: absolute;
     top: 0;
@@ -422,53 +416,51 @@ footer .cinema-trick{
     transition: transform 0.5s ease-in;
   }
 
-  .open{
+  .open {
     transform: translateX(0%);
   }
-  
-  .navigation .links ul{
+
+  .navigation .links ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
 
-  .navigation .icon-links ul{
+  .navigation .icon-links ul {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
 
-  .navigation .links ul .list-items{
+  .navigation .links ul .list-items {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     width: 100%;
   }
 
-  .navigation .icon-links ul .icon-nav{
+  .navigation .icon-links ul .icon-nav {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     width: 100%;
   }
 
-  .navigation .icon-links ul .rotate{
-    position: absolute;
-    left: 55%;
-    top: 70%;
+  .navigation .icon-links ul .rotate {
+    display: none;
   }
 
   /* Cinema hero section */
-  .cinema-hero{
+  .cinema-hero {
     background-position: 50% 50%;
     text-align: left;
-    
   }
 
-  .cinema-top h1{
+  .cinema-top h1 {
     font-size: 3.5rem;
   }
-  .cinema-top h2{
+
+  .cinema-top h2 {
     font-size: 2rem;
     margin-top: 1rem;
     text-align: left;
@@ -476,39 +468,43 @@ footer .cinema-trick{
     left: 5.2rem;
   }
 
-  
-.cinema-top li{
-  gap: 1rem;
+  .cinema-top li {
+    gap: 1rem;
+  }
+
+  .cinema-top li p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .cinema-center {
+    max-width: 400px;
+    padding: 1rem 0;
+  }
+
+  .cinema-center p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .cinema-bottom {
+    gap: 1rem;
+  }
+
+  .cinema-bottom .cinema-btn {
+    padding: 0.6rem 3rem;
+    gap: 1rem;
+  }
+
+  .cinema-bottom .cinema-btn-secondary {
+    padding: 0.2rem 3rem;
+    gap: 1rem;
+  }
 }
 
-.cinema-top li p{
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.cinema-center{
-  max-width: 400px;
-  padding: 1rem;
-}
-
-.cinema-center p{
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.3;
-}
-
-.cinema-bottom{
-  gap: 1rem;
-}
-
-.cinema-bottom .cinema-btn{
-  padding: .6rem 3rem;
-  gap: 1rem;
-}
-
-.cinema-bottom .cinema-btn-secondary{
-  padding: .2rem 3rem;
-  gap: 1rem;
-
-}
+@media (max-width: 600px){
+  .navigation .rotate {
+    display: none;
+  }
 }
